@@ -10,8 +10,7 @@ const VSData = [
         pageID: "pageID",
         subPages: [pageID, pageID, pageID],
         content: "content"
-
-    }
+    },
 ];
 
 export default VSData;
