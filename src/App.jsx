@@ -1,11 +1,11 @@
-import './App.css'
+import MainPage from './components/MainPage/MainPage';
 
 function App() {
   return (
-    <div>
-      Hu
-    </div>
+    <>
+      <MainPage/>
+    </>
   )
 }
 
-export default App
+export default App;

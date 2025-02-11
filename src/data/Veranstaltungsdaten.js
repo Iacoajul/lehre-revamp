@@ -17,8 +17,8 @@ const VSData = [
                 place: "103 S89",    
             }
         ],
-        subPages: [pageID, pageID, pageID],
-        pageID: "pageID",
+        subPages: [],
+        pageID: "001",
         content: "content"
     },
     {
@@ -34,8 +34,8 @@ const VSData = [
                 place: "Philosophicum S91",
             }
         ],
-        subPages: [pageID, pageID, pageID],
-        pageID: "pageID",
+        subPages: [],
+        pageID: "002",
         content: "content"
     },
     
