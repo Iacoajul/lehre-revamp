@@ -1,0 +1,41 @@
+/*Box mit Daten zur Veranstaltung*/
+.VSBox {
+    width: 18em;
+    height: 11em;
+
+    margin: 10px;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    color: white;
+    background: linear-gradient(to top, #386c82, #3b859e);
+}
+
+.VSBox:hover {
+    color: rgb(108, 52, 127);
+    background: white;
+    box-shadow: 0px 0px 15px #919191
+}
+
+/*Text in den Boxen*/
+
+/*Veranstaltungstitel*/
+h4 {
+    font-size: 1.3em;
+    margin: 0px;
+}
+
+/*Uhrzeit, Raum*/
+p {
+    font-size: 1.1em;
+    margin: 0px;
+    margin-top: 15px;
+}
+
+/*Lehrkraft*/
+.teacher {
+    font-weight: 700;
+}

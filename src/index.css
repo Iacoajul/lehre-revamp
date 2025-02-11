@@ -11,7 +11,7 @@
 
 .wrapper {
   width: 80%;
-  max-width: 800px;
+  max-width: 1400px;
   margin: 0 auto;
   text-align: center;
 }
@@ -32,7 +32,7 @@
 }
 
 /*IDH-Farbverlauf für Schrift*/
-.IDH_gradienttext {
+.IDH_textgradient {
   background: linear-gradient(to bottom right, #6c347f , #386c82);
   color: transparent;
   background-clip: text;
