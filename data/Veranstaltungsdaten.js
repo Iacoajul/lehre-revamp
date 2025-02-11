@@ -1,16 +1,44 @@
 const VSData = [
     {
-        title: "String",
-        date: "date",
-        time: "time",
-        places: "room NR.",
-        weekday: "weekday",
-        semester: "semester",
-        teacher: ["name1", "name2"],
-        pageID: "pageID",
+        title: "IT-Zertifikat der Phil. Fak.: Advanced IT Basics",
+        type: "Seminar",
+        semester: "Wintersemester 2024 / 2025",
+        teachers: ["Laura Pascale Berg"],
+        degree: ["IT-Zertifikat der Philosophischen Fakultät"],
+        dates: [
+            {
+                weekday: "Mo.",
+                time: "10:00 - 11:30",
+                place: "103 S93",
+            },
+            {
+                weekday: "Mo.",
+                time: "12:00 - 13:30",
+                place: "103 S89",    
+            }
+        ],
         subPages: [pageID, pageID, pageID],
+        pageID: "pageID",
         content: "content"
     },
+    {
+        title: "Media Transformation – Interaktives Erzählen in VR",
+        type: "Übung",
+        semester: "Wintersemester 2024 / 2025",
+        teachers: ["Prof. Dr. Øyvind Eide", "Théo Bouveyron"],
+        degree: ["Bachelor Medieninformatik"],
+        dates: [
+            {
+                weekday: "Mo.",
+                time: "12:00 - 13:30",
+                place: "Philosophicum S91",
+            }
+        ],
+        subPages: [pageID, pageID, pageID],
+        pageID: "pageID",
+        content: "content"
+    },
+    
 ];
 
 export default VSData;
