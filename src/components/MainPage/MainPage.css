@@ -1,0 +1,36 @@
+/*Überschrift "Lehrveranstaltungen"*/
+h1 {
+    font-size: 3em;
+}
+
+/*Überschrift Semester*/
+h2 {
+    font-size: 1.7em;
+    font-weight: 600;
+    margin-bottom: 60px;
+}
+
+/*Unterüberschrift*/
+h3 {
+    font-size: 1.8em;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    margin: 0px;
+    padding-left: 10px;
+}
+
+/*Container für die Wochentage*/
+.container {
+    padding-top: 20px;
+    margin: auto;
+    margin-bottom: 80px;
+    text-align: left;
+}
+
+/*Container für die Veranstaltungen*/
+.VSContainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
