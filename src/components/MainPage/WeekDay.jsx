@@ -2,6 +2,7 @@ import './MainPage.css'
 import '../../index.css'
 import VSBox from "./VSBox";
 
+//Ein Wochentag. Listet die Veranstaltungen auf die an diesem Tag stattfinden.
 function WeekDay() {
     return(
         <>

@@ -3,6 +3,7 @@ import '../../index.css'
 import WeekDay from './WeekDay'
 import Semesterliste from './Semesterliste';
 
+//Die Startseite. Beinhaltet Auflistungen und Daten von Lehrveranstaltungen
 function MainPage() {
     return(
         <div className='wrapper'>

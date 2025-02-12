@@ -1,6 +1,7 @@
 import './VSBox.css'
 import '../../index.css'
 
+//Box mit Daten zur Veranstaltung auf der Startseite. Leitet zur Hauptseite der Veranstaltung weiter.
 function VSBox() {
     return(
         <>
