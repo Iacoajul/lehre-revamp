@@ -7,7 +7,6 @@ h1 {
 h2 {
     font-size: 1.7em;
     font-weight: 600;
-    margin-bottom: 60px;
 }
 
 /*Unterüberschrift*/
@@ -16,21 +15,30 @@ h3 {
     font-weight: 700;
     text-transform: uppercase;
 
-    margin: 0px;
-    padding-left: 10px;
+    margin-bottom: 15px;
 }
 
 /*Container für die Wochentage*/
 .container {
-    padding-top: 20px;
-    margin: auto;
-    margin-bottom: 80px;
+    margin-top: 60px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
     text-align: left;
 }
 
 /*Container für die Veranstaltungen*/
-.VSContainer {
-    display: flex;
-    flex-wrap: wrap;
+.VSContainer { 
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+    gap: 20px;
     margin-bottom: 50px;
+}
+
+
+.semesterContainer div{
+    border-top: 2px solid #ececec;
+    border-bottom: 2px solid #ececec;
+    margin-bottom: -2px;
 }

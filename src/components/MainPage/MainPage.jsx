@@ -1,7 +1,7 @@
 import './MainPage.css'
 import '../../index.css'
 import WeekDay from './WeekDay'
-import Semesterliste from './Semesterliste';
+import Semesterüberblick from './Semesterüberblick';
 
 //Die Startseite. Beinhaltet Auflistungen und Daten von Lehrveranstaltungen
 function MainPage() {
@@ -15,10 +15,10 @@ function MainPage() {
                 <WeekDay/>
             </div>
 
-            <h2 className='IDH_blue'>Vergangene Semester</h2>
+            <h2 className='IDH_textgradient'>Semesterüberblick</h2>
             
-            <div className='container'>
-                <Semesterliste/>
+            <div className='container semesterContainer'>
+                <Semesterüberblick/>
             </div>
         </div>
     );

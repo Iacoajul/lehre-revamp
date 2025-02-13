@@ -7,6 +7,9 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --IDH_purple: rgb(108, 52, 127);
+  --IDH_blue: rgb(56, 108, 130);
 }
 
 .wrapper {
