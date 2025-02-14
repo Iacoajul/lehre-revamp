@@ -1,0 +1,26 @@
+.Semester {
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+
+    height: 2.5em;
+    padding: 10px;
+    padding: 10px;
+}
+
+h5 {
+    font-size: 1.4em;
+    font-weight: 500;
+    margin: 0px;
+}
+
+.Semester:hover{
+    background-color: #ececec;
+}
+
+/*Container für die Semesterüberblick*/
+.semesterContainer div{
+    border-top: 2px solid #ececec;
+    border-bottom: 2px solid #ececec;
+    margin-bottom: -2px;
+}

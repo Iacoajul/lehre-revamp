@@ -15,10 +15,19 @@ h3 {
     font-weight: 700;
     text-transform: uppercase;
 
-    margin-bottom: 15px;
+    margin-top: 50px;
+    margin-bottom: 5px;
 }
 
-/*Container für die Wochentage*/
+a {
+    text-decoration: none;
+}
+
+p {
+    font-weight: 300;
+}
+
+/*Container*/
 .container {
     margin-top: 60px;
     margin-bottom: 100px;
@@ -33,12 +42,4 @@ h3 {
     justify-content: center;
     grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
     gap: 20px;
-    margin-bottom: 50px;
-}
-
-
-.semesterContainer div{
-    border-top: 2px solid #ececec;
-    border-bottom: 2px solid #ececec;
-    margin-bottom: -2px;
 }
