@@ -1,53 +1,46 @@
-import '../../index.css'
-import WeekDay from './WeekDay'
-import VSData from '../../data/Veranstaltungsdaten';
+import { useMemo } from 'react';
+import '../../index.css';
+import WeekDay from './WeekDay';
 
-//erstellt für jeden Wochentag ein WeekDay component mit den jeweils stattfindenden Veranstaltungen
-function Week() {
-    const week = createWeek(VSData);
-    return(
-        <>
-            <WeekDay day='Montag' events={week.monday}/>
-            <WeekDay day='Dienstag' events={week.tuesday}/>
-            <WeekDay day='Mittwoch' events={week.wednesday}/>
-            <WeekDay day='Donnerstag' events={week.thursday}/>
-            <WeekDay day='Freitag' events={week.friday}/>
-        </>
-    )
-}
 
-export default Week
+// Weekday mapping from short German notation to full names
+const weekdayMap = {
+    "Mo.": "Montag",
+    "Di.": "Dienstag",
+    "Mi.": "Mittwoch",
+    "Do.": "Donnerstag",
+    "Fr.": "Freitag"
+};
 
-function createWeek(vs){
-    const week = {
-        monday: [],
-        tuesday: [],
-        wednesday: [],
-        thursday: [],
-        friday: []
-    };
+// Sortiert alle Veranstaltungen nach Wochentagen
+function sortByWeekday(vs) {
+    const week = Object.fromEntries(
+        Object.values(weekdayMap).map(day => [day, []]) // Create empty arrays for each day
+    );
 
-    if(Array.isArray(vs)){
-        vs.forEach(element => {
-            switch (element.date.weekday){
-                case "Mo.":
-                    week.monday.push(element);
-                    break;
-                case "Di.":
-                    week.tuesday.push(element);
-                    break;
-                case "Mi.":
-                    week.wednesday.push(element);
-                    break;
-                case "Do.":
-                    week.thursday.push(element);
-                    break;
-                case "Fr.":
-                    week.friday.push(element);
-                    break;
+    if (Array.isArray(vs)) {
+        vs.forEach(event => {
+            const day = weekdayMap[event.date.weekday]; // Convert short notation to full name
+            if (day) {
+                week[day].push(event);
             }
-        });   
-    }
-
+        });
+    };
     return week;
 }
+
+function Week(props) {
+    // Memoize week calculation to avoid unnecessary recalculations
+    const week = useMemo(() => sortByWeekday(props.data), [props.data]);
+    console.log(week);
+
+    return (
+        <>
+            {Object.entries(week).map(([day, events]) => (
+                <WeekDay key={day} day={day} events={events} />
+            ))}
+        </>
+    );
+}
+
+export default Week;

@@ -2,14 +2,12 @@ import './MainPage.css'
 import './Semester.css'
 import Semester from './Semester';
 
-function newSemester() {
-
-}
-
 //Plathalter
 function Semesterüberblick() {
     return(
-        <div className='semesterContainer'>
+        <div className='semesterListe'>
+            <Semester/>
+            <Semester/>
             <Semester/>
         </div>
     );

@@ -7,7 +7,7 @@ function VSBox(props) {
     const date = props.date || {};
 
     return(
-        <a href=''>
+        <a href='link-zur-veranstaltung-hier-einfügen'>
             <div className="VSBox">
                 <h4>{props.title}</h4>
                 <div className='dates'>
