@@ -9,16 +9,6 @@ h2 {
     font-weight: 600;
 }
 
-/*Unterüberschrift*/
-h3 {
-    font-size: 1.8em;
-    font-weight: 700;
-    text-transform: uppercase;
-
-    margin-top: 50px;
-    margin-bottom: 5px;
-}
-
 a {
     text-decoration: none;
 }
@@ -34,12 +24,4 @@ p {
     margin-left: auto;
     margin-right: auto;
     text-align: left;
-}
-
-/*Container für die Veranstaltungen*/
-.VSContainer { 
-    display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
-    gap: 20px;
 }

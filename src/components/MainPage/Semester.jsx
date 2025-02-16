@@ -1,15 +1,33 @@
-import './Semester.css'
-import '../../index.css'
+import './Semester.css';
+import '../../index.css';
+import React, { useState, useRef, useEffect } from 'react';
 
-function Semester() {
+function Semester(props) {
 
-    return(
+    //collapsible behavior
+    const [isExpanded, setExpanded] = useState(false);
+    const contentRef = useRef(null);
+    const [height, setHeight] = useState('0px');
+
+    useEffect(() => {
+        if (contentRef.current) {
+            setHeight(isExpanded ? `${contentRef.current.scrollHeight}px` : '0px');
+        }
+    }, [isExpanded]);
+
+    //props management
+
+
+    return (
         <>
             <div className='semesterContainer'>
-                <div className='collapsibleHead IDH_purple'>
-                    <h5>Sommersemester 2024</h5>
+                <div
+                    className={isExpanded ? 'collapsibleHeadActive' : 'collapsibleHead'}
+                    onClick={() => setExpanded(!isExpanded)}
+                >
+                    <h5>{props.Semester}</h5>
                 </div>
-                <div className='collapsibleContent'>
+                <div ref={contentRef} className='collapsibleContent' style={{maxHeight: height,}}>
                     <ul>
                         <li><a href='link zur vs hier einfügen'>IT-Zertifikat der Phil. Fak.: Advanced IT Basics</a></li>
                         <li><a href='link zur vs hier einfügen'>IT-Zertifikat der Phil.Fak.: Advanced Web Basics</a></li>

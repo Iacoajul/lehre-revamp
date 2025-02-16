@@ -10,10 +10,13 @@
 
   --IDH_purple: rgb(108, 52, 127);
   --IDH_blue: rgb(56, 108, 130);
+  --IDH_gradient: linear-gradient(to bottom right, #6c347f , #386c82);
+
+  box-sizing: border-box;
 }
 
 .wrapper {
-  width: 80%;
+  width: 90%;
   max-width: 1400px;
   margin: 0 auto;
   text-align: center;

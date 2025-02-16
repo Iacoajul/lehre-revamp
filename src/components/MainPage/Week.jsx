@@ -1,5 +1,6 @@
 import { useMemo } from 'react';
 import '../../index.css';
+import './Week.css'
 import WeekDay from './WeekDay';
 
 
@@ -37,7 +38,7 @@ function Week(props) {
     return (
         <>
             {Object.entries(week).map(([day, events]) => (
-                <WeekDay key={day} day={day} events={events} />
+                <WeekDay key={day} day={day} events={events} startActive={day === "Montag"}/>
             ))}
         </>
     );

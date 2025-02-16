@@ -3,12 +3,13 @@ import './Semester.css'
 import Semester from './Semester';
 
 //Plathalter
-function Semesterüberblick() {
+function Semesterüberblick(props) {
+
     return(
         <div className='semesterListe'>
-            <Semester/>
-            <Semester/>
-            <Semester/>
+            <Semester Semester="Sommersemester 2024"/>
+            <Semester Semester="Sommersemester 2024"/>
+            <Semester Semester="Sommersemester 2024"/>
         </div>
     );
 }

@@ -1,25 +1,53 @@
+/*--------------------Head--------------------*/
+
 .semesterContainer {
-    border-top: 2px solid #ececec;
     border-bottom: 2px solid #ececec;
     margin-bottom: -2px;
 }
 
 .collapsibleHead {
+    border-top: 2px solid #ececec;
+    color: var(--IDH_purple);
     height: 2.4em;
     padding: 15px;
 
     display: flex;
     align-items: center;
+
+    user-select: none;
+    transition: 0.3s;
 }
 
-.collapsibleContent {
-    overflow: hidden;
-    height: 0px;
+.collapsibleHeadActive {
+    color: white;
+    background: var(--IDH_gradient);
+    height: 2.4em;
+    padding: 15px;
+
+    display: flex;
+    align-items: center;
+
+    user-select: none;
 }
 
 .collapsibleHead:hover{
     background-color: #ececec;
 }
+
+@keyframes expand {
+    from {height: 0px;}
+    to {height: 250px;}
+}
+
+
+
+/*-------------------Content------------------*/
+
+.collapsibleContent {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+} 
 
 ul {
     list-style-type: none;
@@ -47,5 +75,3 @@ h5 {
 a {
     color: inherit;
 }
-
-/*Container für die Semesterüberblick*/
