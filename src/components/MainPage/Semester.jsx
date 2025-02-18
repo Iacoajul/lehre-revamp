@@ -2,6 +2,9 @@ import './Semester.css';
 import '../../index.css';
 import React, { useState, useRef, useEffect } from 'react';
 
+/*Ein Semester aus dem Semesterüberblick. Kann ausgeklappt werden 
+um eine Auflistung der Veranstaltungen anzuzeigen*/
+
 function Semester({name, events}) {
 
     //collapsible behavior
@@ -15,9 +18,6 @@ function Semester({name, events}) {
         }
     }, [isExpanded]);
 
-    //props management
-
-
     return (
         <>
             <div className='semesterContainer'>
@@ -30,6 +30,7 @@ function Semester({name, events}) {
                 <div ref={contentRef} className='collapsibleContent' style={{maxHeight: height,}}>
                     <ul>
                         {
+                            //Erzeuge ein Listenelement für jede Veranstaltung
                             events.map((element) => (
                                 <li><a href='vslink'>{element.title}</a></li>
                             ))

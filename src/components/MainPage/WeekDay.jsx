@@ -5,7 +5,7 @@ import VSBox from './VSBox';
 import React, { useState, useRef, useEffect } from 'react';
 import Arrow from '../../assets/icons/collapsible_arrow.svg'
 
-// Ein Wochentag. Listet die Veranstaltungen auf, die an diesem Tag stattfinden.
+// Ein Wochentag. Listet die Veranstaltungen des aktuellen Semesters auf, die an diesem Tag stattfinden.
 function WeekDay({ day, events, startActive }) {
     
     const [isExpanded, setExpanded] = useState(startActive);

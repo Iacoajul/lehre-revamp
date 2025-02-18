@@ -89,7 +89,7 @@ const VSData = [
         subPages: [],
         content: "content"
     },
-    //--------------Test, bitte überschreiben--------------
+    //-----------------Test, später mit richtigen VS-Daten überschreiben--------------------
     {
         title: "Digital Humanities – Theorie und Praxis",
         id: "005",

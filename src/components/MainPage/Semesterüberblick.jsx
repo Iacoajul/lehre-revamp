@@ -2,6 +2,7 @@ import './MainPage.css'
 import './Semester.css'
 import Semester from './Semester';
 
+//Eine Auflistung von allen Semestern (außer dem aktuellen)
 function Semesterüberblick(props) {
     const archive = props.archive;
     return(

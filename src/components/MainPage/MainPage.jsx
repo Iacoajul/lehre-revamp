@@ -3,13 +3,12 @@ import '../../index.css'
 import Week from './Week';
 import Semesterüberblick from './Semesterüberblick';
 import VSData from '../../data/Veranstaltungsdaten';
+import {groupBySemester} from '../../data/util'
 
 function MainPage() {
+    
     const currentSemester = "Wintersemester 2024 / 2025";
     const { current, archive } = groupBySemester(VSData, currentSemester);
-
-    console.log("Current Semester Events:", current);
-    console.log("Archived Semesters:", archive);
 
     return (
         <div className='wrapper'>
@@ -25,24 +24,3 @@ function MainPage() {
 }
 
 export default MainPage
-
-function groupBySemester(events, currentSemester) {
-    return events.reduce((acc, event) => {
-        const semester = event.semester;
-        if (semester === currentSemester) {
-            if (!acc.current) {
-                acc.current = [];
-            }
-            acc.current.push(event);
-        } else {
-            if (!acc.archive) {
-                acc.archive = {};
-            }
-            if (!acc.archive[semester]) {
-                acc.archive[semester] = [];
-            }
-            acc.archive[semester].push(event);
-        }
-        return acc;
-    }, { current: [], archive: {} });
-}
