@@ -2,7 +2,7 @@ import './Semester.css';
 import '../../index.css';
 import React, { useState, useRef, useEffect } from 'react';
 
-function Semester(props) {
+function Semester({name, events}) {
 
     //collapsible behavior
     const [isExpanded, setExpanded] = useState(false);
@@ -25,14 +25,15 @@ function Semester(props) {
                     className={isExpanded ? 'collapsibleHeadActive' : 'collapsibleHead'}
                     onClick={() => setExpanded(!isExpanded)}
                 >
-                    <h5>{props.Semester}</h5>
+                    <h5>{name}</h5>
                 </div>
                 <div ref={contentRef} className='collapsibleContent' style={{maxHeight: height,}}>
                     <ul>
-                        <li><a href='link zur vs hier einfügen'>IT-Zertifikat der Phil. Fak.: Advanced IT Basics</a></li>
-                        <li><a href='link zur vs hier einfügen'>IT-Zertifikat der Phil.Fak.: Advanced Web Basics</a></li>
-                        <li><a href='link zur vs hier einfügen'>IT-Zertifikat der Phil. Fak.: Tools & Methods in DH</a></li>
-                        <li><a href='link zur vs hier einfügen'>IT-Zertifikat der Phil.Fak: Digital Objects</a></li>
+                        {
+                            events.map((element) => (
+                                <li><a href='vslink'>{element.title}</a></li>
+                            ))
+                        }
                     </ul>
                 </div>
             </div>

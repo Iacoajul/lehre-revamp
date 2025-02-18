@@ -3,7 +3,6 @@ import '../../index.css';
 import './Week.css'
 import WeekDay from './WeekDay';
 
-
 // Weekday mapping from short German notation to full names
 const weekdayMap = {
     "Mo.": "Montag",
@@ -13,8 +12,8 @@ const weekdayMap = {
     "Fr.": "Freitag"
 };
 
-// Sortiert alle Veranstaltungen nach Wochentagen
-function sortByWeekday(vs) {
+// Erstellt ein Object mit einem Array an Veranstaltungen für jeden Wochentag
+function groupByWeekday(vs) {
     const week = Object.fromEntries(
         Object.values(weekdayMap).map(day => [day, []]) // Create empty arrays for each day
     );
@@ -32,7 +31,7 @@ function sortByWeekday(vs) {
 
 function Week(props) {
     // Memoize week calculation to avoid unnecessary recalculations
-    const week = useMemo(() => sortByWeekday(props.data), [props.data]);
+    const week = useMemo(() => groupByWeekday(props.events), [props.events]);
     console.log(week);
 
     return (
