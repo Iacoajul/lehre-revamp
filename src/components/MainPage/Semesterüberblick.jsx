@@ -2,14 +2,14 @@ import './MainPage.css'
 import './Semester.css'
 import Semester from './Semester';
 
-//Plathalter
+//Eine Auflistung von allen Semestern (außer dem aktuellen)
 function Semesterüberblick(props) {
-
+    const archive = props.archive;
     return(
         <div className='semesterListe'>
-            <Semester Semester="Sommersemester 2024"/>
-            <Semester Semester="Sommersemester 2024"/>
-            <Semester Semester="Sommersemester 2024"/>
+            {Object.entries(archive).map(([semestername, events]) => (
+                <Semester key={semestername} name={semestername} events={events} />
+            ))}
         </div>
     );
 }

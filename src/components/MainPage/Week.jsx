@@ -2,37 +2,12 @@ import { useMemo } from 'react';
 import '../../index.css';
 import './Week.css'
 import WeekDay from './WeekDay';
+import {groupByWeekday} from '../../data/util'
 
-
-// Weekday mapping from short German notation to full names
-const weekdayMap = {
-    "Mo.": "Montag",
-    "Di.": "Dienstag",
-    "Mi.": "Mittwoch",
-    "Do.": "Donnerstag",
-    "Fr.": "Freitag"
-};
-
-// Sortiert alle Veranstaltungen nach Wochentagen
-function sortByWeekday(vs) {
-    const week = Object.fromEntries(
-        Object.values(weekdayMap).map(day => [day, []]) // Create empty arrays for each day
-    );
-
-    if (Array.isArray(vs)) {
-        vs.forEach(event => {
-            const day = weekdayMap[event.date.weekday]; // Convert short notation to full name
-            if (day) {
-                week[day].push(event);
-            }
-        });
-    };
-    return week;
-}
-
+//Listet alle Wochentage auf
 function Week(props) {
     // Memoize week calculation to avoid unnecessary recalculations
-    const week = useMemo(() => sortByWeekday(props.data), [props.data]);
+    const week = useMemo(() => groupByWeekday(props.events), [props.events]);
     console.log(week);
 
     return (

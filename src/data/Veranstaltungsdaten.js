@@ -125,7 +125,40 @@ const VSData = [
         },
         subPages: [],
         content: "content"
-    }
+    },
+    //-----------------Test, später mit richtigen VS-Daten überschreiben--------------------
+    {
+        title: "Digital Humanities – Theorie und Praxis",
+        id: "005",
+        type: "Kolloquium",
+        semester: "Sommersemester 2024",
+        teachers: ["apl. Prof. Dr. Gioele Barabucci"],
+        degree: ["Bachelor Informationsverarbeitung", "Bachelor Medieninformatik "],
+        date: {
+            weekday: "Di.",
+            time: "12:00 - 13:30",
+            place: "Philosophicum, S89",
+        },
+        subPages: [],
+        content: "content"
+    },
+    {
+        title: "Digital Humanities – Theorie und Praxis",
+        id: "005",
+        type: "Kolloquium",
+        semester: "Wintersemester 2023 / 2024",
+        teachers: ["apl. Prof. Dr. Gioele Barabucci"],
+        degree: ["Bachelor Informationsverarbeitung", "Bachelor Medieninformatik "],
+        date: {
+            weekday: "Di.",
+            time: "12:00 - 13:30",
+            place: "Philosophicum, S89",
+        },
+        subPages: [],
+        content: "content"
+    },
+
+
 ];
 
 export default VSData;
