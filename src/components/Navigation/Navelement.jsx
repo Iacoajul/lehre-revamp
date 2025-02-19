@@ -4,6 +4,7 @@ import VSData from '../../data/Veranstaltungsdaten';
 const Navelement = ({ title, subPages }) => {
   return (
     <div>
+      Navelement exists
     <button>to {title}</button>
       {subPages && (
         <div style={{ paddingLeft: '20px' }}>

@@ -1,5 +1,6 @@
 import './VSBox.css'
 import '../../index.css'
+import {Link} from 'react-router-dom'
 
 //Box mit Daten zur Veranstaltung auf der Startseite. Leitet zur Hauptseite der Veranstaltung weiter.
 function VSBox(props) {
@@ -7,7 +8,7 @@ function VSBox(props) {
     const date = props.date || {};
 
     return(
-        <a href='link-zur-veranstaltung-hier-einfügen'>
+        <Link to={`/veranstaltung/${props.id}`} >
             <div className="VSBox">
                 <h4>{props.title}</h4>
                 <div className='dates'>
@@ -16,7 +17,7 @@ function VSBox(props) {
                     <p className='teacher'>{teachers}</p>
                 </div>
             </div>
-        </a>
+        </Link>
     );
 }
 

@@ -6,7 +6,9 @@ import Navtree from './Navtree'
 const Sidebar = () => {
   return (
     <div>  
-        <Navtree title="IT-Zertifikat der Phil. Fak.: Advanced IT Basics"></Navtree>
+Sidebar exists
+    
+        <Navtree title="IT-Zertifikat der Phil. Fak.: Advanced IT Basics" id="001"></Navtree>
 </div>
   )
 }
