@@ -1,9 +1,7 @@
 /*Box mit Daten zur Veranstaltung*/
 .VSBox {
-    width: 18em;
-    height: 11em;
-
-    margin: 10px;
+    position: relative; /* Ensure it stays above the pseudo-element */
+    min-height: 11em;
     padding: 20px;
 
     display: flex;
@@ -11,13 +9,29 @@
     justify-content: space-between;
 
     color: white;
+
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Create the gradient layer */
+.VSBox::before {
+    content: "";
+    position: absolute;
+    inset: 0; /* Cover the entire div */
     background: linear-gradient(to top, #386c82, #3b859e);
+    transition: opacity 0.3s ease;
+    z-index: -1; /* Move behind the text */
+}
+
+/* On hover, fade out the gradient */
+.VSBox:hover::before {
+    opacity: 0;
 }
 
 .VSBox:hover {
-    color: rgb(108, 52, 127);
-    background: white;
-    box-shadow: 0px 0px 15px #919191
+    color: var(--IDH_purple);
+    background-color: white;
+    box-shadow: 0px 0px 15px hsla(0, 0%, 0%, 0.25);
 }
 
 /*Text in den Boxen*/

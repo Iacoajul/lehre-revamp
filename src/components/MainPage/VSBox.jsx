@@ -1,18 +1,22 @@
 import './VSBox.css'
 import '../../index.css'
 
-function VSBox() {
+//Box mit Daten zur Veranstaltung auf der Startseite. Leitet zur Hauptseite der Veranstaltung weiter.
+function VSBox(props) {
+    const teachers = (props.teachers && Array.isArray(props.teachers)) ? props.teachers.join(" | ") : "No teachers listed";
+    const date = props.date || {};
+
     return(
-        <>
+        <a href='link-zur-veranstaltung-hier-einfügen'>
             <div className="VSBox">
-                <h4>IT-Zertifikat der Phil. Fak.: Advanced IT Basics</h4>
+                <h4>{props.title}</h4>
                 <div className='dates'>
-                    <p>10:00 - 11:30</p>
-                    <p>103 S93</p>
-                    <p className='teacher'>Laura Pascale Berg</p>
+                    <p>{date.time || "unbekannte Uhrzeit"}</p>
+                    <p>{date.place || "unbekannter Raum"}</p>
+                    <p className='teacher'>{teachers}</p>
                 </div>
             </div>
-        </>
+        </a>
     );
 }
 

@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Header = () => {
+function Header() {
   return (
-    <div>Header</div>
+    <div style={{ textAlign: 'center' }}>Header</div>
   )
 }
 

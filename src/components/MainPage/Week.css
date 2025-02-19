@@ -1,0 +1,39 @@
+/*Container für die Veranstaltungen*/
+.VSContainer {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+    gap: 20px;
+    padding: 15px 15px 0px 15px;
+
+    overflow: hidden;
+    transition: height 0.2s ease-out;
+}
+
+/*Unterüberschrift*/
+.dayOfWeek {
+    font-size: 1.8em;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    padding-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+
+    user-select: none;
+}
+
+.weekDayHead {
+    display: flex;
+    align-items: center;
+}
+
+.arrow {
+    height: 1.3em;
+    transition: transform 0.1s ease-out;
+}
+
+.disclaimer {
+    padding-left: 15px;
+    margin: 0;
+}
