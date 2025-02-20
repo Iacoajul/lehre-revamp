@@ -17,9 +17,13 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/veranstaltung/:id',
-        element: <Header />
+        element: <MainP />
       }]
   },
+  {
+    path: '/veranstaltung/:id',
+    element: <MainP />
+  }
 ]);
 
 function App() {
