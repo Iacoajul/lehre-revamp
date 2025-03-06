@@ -4,6 +4,7 @@ import Header from './components/Header';
 import MainP from './components/Pages/MainP';
 import SubP from './components/Pages/SubP';
 import Sidebar from './components/Navigation/Sidebar';
+import Content from './components/Content';
 
 const router = createBrowserRouter([
   {

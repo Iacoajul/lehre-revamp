@@ -1,3 +1,99 @@
 .content {
 width: 95%;
 }
+
+.content-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0%, 0%, 0.1);
+    font-family: 'Inter', sans-serif;
+}
+
+.content-container h1 {
+    color: var(--IDH_purple);
+    font-size: 2em;
+    font-weight: 700;
+    text-align: center;
+    border-bottom: 3px solid var(--IDH_purple);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.content-container p {
+    color: #333;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+/* Box mit Kursdaten */
+.course-info {
+    background: var(--IDH_gradient); /* IDH Farbverlauf für den Hintergrund */
+    padding: 15px;
+    color: white;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.course-info {
+    background: var(--IDH_gradient);
+    padding: 15px;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.course-info p {
+    margin: 5px 0;
+    color: white;
+}
+
+.course-topics h2 {
+    color: var(--IDH_purple);
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+.course-topics h3 {
+    color: var(--IDH_blue);
+    font-size: 1.3em;
+    margin-top: 20px;
+}
+
+.course-topics ul {
+    padding-left: 20px;
+}
+
+.course-topics li {
+    list-style-type: disc;
+    margin: 5px 0;
+    color: #444;
+}
+
+.learning-goals {
+    background: #f3ecf7;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.learning-goals ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.learning-goals li {
+    margin: 5px 0;
+}
+
+.learning-goals h2 {
+    color: var(--IDH_purple);
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
