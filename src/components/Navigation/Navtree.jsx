@@ -1,25 +1,26 @@
-import React from 'react'
-import Navelement from './Navelement'
-import VSData from '../../data/Veranstaltungsdaten'
-import { Link } from 'react-router-dom'
-import styles from './Navtree.module.css'
+import React from 'react';
+import Navelement from './Navelement';
+import VSData from '../../data/Veranstaltungsdaten';
+import { Link } from 'react-router-dom';
+import styles from './Navtree.module.css';
 
-//Actual Navigation root component
-
-
-const Navtree = ({ id}) => {
+const Navtree = ({ id }) => {
+  const mainId = id.slice(0, 3);
   const navStructure = VSData.find(item => item.id === id)?.subPages || [];
   const title = VSData.find(item => item.id === id)?.title || '';
+
   return (
     <nav className={styles.Navtree}>
-      <Link to={`/veranstaltung/${id}`}><h4>{title}</h4></Link>
-      <ul>
+      <div className={styles.stickyHeader}>
+        <Link to={`/veranstaltung/${id}`}><h4>{title}</h4></Link>
+      </div>
+      <div className={styles.elementContainer}>
       {navStructure.map((item, index) => (
-      <li> <Navelement key={index} {...item} /> </li>
+        <Navelement key={index} {...item} />
       ))}
-      </ul>
+      </div>
     </nav>
   );
 };
 
-export default Navtree
+export default Navtree;

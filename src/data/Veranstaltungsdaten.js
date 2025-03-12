@@ -16,18 +16,13 @@ const VSData = [
             { title: "Computer-Hardware und BIOS / UEFI", id: "001002", subPages: [] },
             { title: "Grundlagen Betriebssysteme", id: "001003", subPages: [] },
             { title: "Betriebssystem Windows", id: "001004", subPages: [] },
-            { 
-                title: "Open Source", 
-                id: "001005", 
-                subPages: [
-                ] 
-            },
+            { title: "Open Source", id: "001005",  subPages: [] },
             { title: "Microsoft Office", id: "001006", subPages: [
                 { title: "Word", id: "001007", subPages: [] },
                 { title: "Excel", id: "001008", subPages: [] },
                 { title: "PowerPoint", id: "001009", subPages: [] }
             ] },
-            { title: "Libreoffice (inklusive Base-Datenbanksoftware) / Grundlagen Datenbanken", id: "001010", subPages: [] },
+            { title: "Libreoffice / Grundlagen Datenbanken", id: "001010", subPages: [] },
             { title: "Bildbearbeitung in Theorie und Praxis", id: "001011", subPages: [] },
             { title: "Datenschutz und Informationssicherheit", id: "001012", subPages: [] },
             { 
@@ -36,7 +31,7 @@ const VSData = [
                 subPages: [
                     { title: "Ubuntu-Linux ausprobieren", id: "001014", subPages: [] },
                     { title: "Kommandozeile - Shell - Terminal", id: "001015", subPages: [] },
-                    { title: "Fake-Computer im Computer: Virtuelle Maschinen (VM) einsetzen", id: "001016", subPages: [] }
+                    { title: "Computer im Computer: Virtuelle Maschinen (VM)", id: "001016", subPages: [] }
                 ] 
             },
             { title: "Netzwerktechnik I", id: "001017", subPages: [] },

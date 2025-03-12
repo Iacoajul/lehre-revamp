@@ -1,0 +1,48 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background-color: none;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  transform: translateX(-100%);
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  box-shadow: 0px 0px 25px hsla(0, 0%, 0%, 0.35);
+  background: var(--IDH_gradient);
+}
+
+.sidebar.open {
+  transform: translateX(0);
+}
+
+.toggleButton {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  background: var(--IDH_gradient2);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1000;
+  transition: left 0.3s ease;
+  border-radius: 5px;
+}
+
+.sidebar.open + .toggleButton {
+  left: 260px; /* Sidebar width + 10px margin */
+}
+
+@media (min-width: 1200px) {
+  .sidebar {
+    transform: translateX(0);
+  }
+
+  .toggleButton {
+    display: none;
+  }
+}
+

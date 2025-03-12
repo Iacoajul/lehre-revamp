@@ -7,16 +7,19 @@ const SubP = () => {
   const containerStyle = {
     display: 'flex',
     flexDirection: 'row',
+    width: '100%',
+    justifyContent: 'right',
   };
 
   const contentStyle = {
-    flex: 1,
-    minWidth: '80%',
+    flex: '1',
+  
+    // maxWidth: '80%',
   };
 
   const sidebarStyle = {
     
-    width: '220px',
+    width: '20%',
     minWidth: '15%',
   };
 
@@ -24,11 +27,11 @@ const SubP = () => {
     <>
       <Header />
       <div style={containerStyle}>
-        <div style={contentStyle}>
-          <Content />
-        </div>
         <div style={sidebarStyle}>
           <Sidebar />
+        </div>
+        <div style={contentStyle}>
+          <Content />
         </div>
       </div>
     </>

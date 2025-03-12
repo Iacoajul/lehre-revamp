@@ -1,11 +1,36 @@
-Navtree {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    height: 100%;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    background-color: aquamarine;
+.Navtree {
+  list-style: none;
+  overflow-y: auto;
+  height: 100%; /* Use full height */
+  padding-top: 10px;
+}
+
+.Navtree::-webkit-scrollbar {
+  display: none;
+}
+
+.stickyHeader {
+  position: sticky;
+  top: 0;
+  /* background: var(--IDH_gradient);  */
+  z-index: 1;
+
+}
+
+.elementContainer {
+  position: fixed;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.elementContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.Navtree h4 {
+    margin: 2px;
+  color:  rgb(56, 108, 130);
+  filter: brightness(1.4);
+  font-size: 19px;
+  margin-bottom: 10px;
 }

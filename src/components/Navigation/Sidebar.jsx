@@ -1,24 +1,29 @@
-import React from 'react'
-import Navtree from './Navtree'
-import {useParams} from 'react-router-dom'
-
-
-import './Sidebar.css'
+import React, { useState } from 'react';
+import Navtree from './Navtree';
+import { useParams } from 'react-router-dom';
+import styles from './Sidebar.module.css';
 
 //Stylable Container for actual navigation
 
 const Sidebar = () => {
+  const { id } = useParams();
+  const mainId = id.slice(0, 3);
+  const [isOpen, setIsOpen] = useState(false);
 
-const { id } = useParams();
+  const toggleSidebar = () => {
+    setIsOpen(!isOpen);
+  };
 
   return (
     <>
-    <div className='sticky'>
-    
-        <Navtree title="IT-Zertifikat der Phil. Fak.: Advanced IT Basics" id="001"></Navtree>
-</div>
-</>
-  )
-}
+      <div className={`${styles.sidebar} ${isOpen ? styles.open : ''}`}>
+        <Navtree id={mainId} />
+      </div>
+      <button className={`${styles.toggleButton} ${isOpen ? styles.open : ''}`} onClick={toggleSidebar}>
+        ☰
+      </button>
+    </>
+  );
+};
 
-export default Sidebar
+export default Sidebar;
