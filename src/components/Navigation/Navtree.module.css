@@ -3,6 +3,7 @@
   overflow-y: auto;
   height: 100%; /* Use full height */
   padding-top: 10px;
+  margin-left: 5px;
 }
 
 .Navtree::-webkit-scrollbar {
@@ -12,7 +13,6 @@
 .stickyHeader {
   position: sticky;
   top: 0;
-  /* background: var(--IDH_gradient);  */
   z-index: 1;
 
 }
@@ -29,7 +29,7 @@
 
 .Navtree h4 {
     margin: 2px;
-  color:  rgb(56, 108, 130);
+  color:  white;
   filter: brightness(1.4);
   font-size: 19px;
   margin-bottom: 10px;

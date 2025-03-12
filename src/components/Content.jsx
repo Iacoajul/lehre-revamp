@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import VSData from '../data/Veranstaltungsdaten';
 import "./Content.css";
 import React, { useState } from 'react'; // useState importieren
@@ -12,7 +12,15 @@ const Content = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   if (!course) {
-    return <div>Kurs nicht gefunden!</div>; // Falls keine Übereinstimmung, Fehlermeldung anzeigen
+    return <div className='empty-content'>
+
+      <h1>Kein Kurs gefunden</h1>
+      <span>
+      <Link to="/"><button>Zurück zur startseite</button></Link>
+      </span>
+    
+
+    </div>; // Falls keine Übereinstimmung, Fehlermeldung anzeigen
   }
 
   const toggleContent = () => setIsOpen(!isOpen);
