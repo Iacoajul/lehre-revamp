@@ -2,6 +2,7 @@ import React from 'react'
 import Sidebar from '../Navigation/Sidebar'
 import Header from '../Header'
 import Content from '../Content'
+import Footer from '../Footer'
 
 const SubP = () => {
   const containerStyle = {
@@ -31,6 +32,7 @@ const SubP = () => {
           <Sidebar />
         </div>
       </div>
+      <Footer />
     </>
   );
 }
