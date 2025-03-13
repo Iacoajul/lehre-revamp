@@ -1,29 +1,18 @@
 import React from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import Header from './components/Header';
 import MainP from './components/Pages/MainP';
 import SubP from './components/Pages/SubP';
-import Sidebar from './components/Navigation/Sidebar';
-import Content from './components/Content';
 
-const router = createBrowserRouter([
-  {
-    path: '/',
+const router = createBrowserRouter([ //Creating the router
+  {//Main page
+    path: '/', 
     element: <MainP />,
     errorElement: <MainP />
   },
-  {
-    path: '/veranstaltung',
-    element: <SubP />,
-    children: [
-      {
-        path: '/veranstaltung/:id',
-        element: <MainP />
-      }]
-  },
-  {
+
+  {//Subpages, id dependent
     path: '/veranstaltung/:id',
-    element: <MainP />
+    element: <SubP />
   }
 ]);
 

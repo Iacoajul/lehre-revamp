@@ -1,21 +1,77 @@
-button {
-    background: var(--IDH_purple); 
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    font-size: 16px;
-    margin: 1px 1px;
-    cursor: pointer;
-    border-radius: 22px;
+/* The main container */
+.navCell {
+  position: relative; /* Ensure it stays above the pseudo-element */
+  padding: 7px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+margin-right: 1em;
+  color: white;
+  background: linear-gradient(to top right, #386c82, #3b859e, #386c82);
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
 }
 
-button:hover {
-  background-color: #0056b3;
+/* Create the gradient layer */
+.navCell::before {
+  content: "";
+  position: absolute;
+  inset: 0; /* Cover the entire div */
+  background: linear-gradient(to top right, #386c82, #3b859e, #386c82);
+  transition: opacity 0.3s ease;
+  z-index: -1; /* Move behind the text */
+  border-radius: 8px;
+  
 }
 
-Link {
+/* On hover, fade out the gradient */
+.navCell:hover::before {
+  opacity: 0;
+}
 
+/* On hover, change the text color and background */
+.navCell:hover {
+  color: var(--IDH_purple);
+  background: white;
+  box-shadow: 0px 0px 15px hsla(0, 0%, 0%, 0.25);
+  
+}
+
+/*Text in the Box*/
+.navLink {
+  text-decoration: none;
+  color: var(--IDH_primaryColor);
+  font-weight: bold;
+  font-size: 16px;
+  
+}
+
+/*Text in the Box on hover*/
+.navLink:hover {
+  text-decoration: none;
+  color: var(--IDH_secondaryColor);
+}
+
+/*Subpages, hidden without hover*/
+.subPages {
+  display: none;
+  padding-left: 20px;
+}
+
+/*Subpages, shown on hover*/
+.navCell:hover .subPages {
+  display: block;
+}
+
+/*Icon for expanding the subpages*/
+.expandIcon {
+  cursor: pointer;
+  margin-left: auto;
+  font-size: 12px;
+  color: var(--IDH_primaryColor);
+}
+
+/*Icon for expanding the subpages on hover*/
+.navCell:hover .expandIcon {
+  transform: rotate(90deg);
 }

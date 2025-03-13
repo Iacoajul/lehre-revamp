@@ -1,11 +1,42 @@
-Navtree {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    height: 100%;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    background-color: aquamarine;
+/*Container for Navigation */
+.Navtree {
+  list-style: none;
+  overflow-y: auto;
+  height: 100%; /* Use full height */
+  padding-top: 10px;
+  margin-left: 5px;
+}
+
+/* Hide scrollbar */
+.Navtree::-webkit-scrollbar {
+  display: none;
+}
+
+/* Glue header to screen*/
+.stickyHeader {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+
+}
+
+/* Container for Subpage Links */
+.elementContainer {
+  position: fixed;
+  height: 100%;
+  overflow-y: auto;
+}
+
+/* We hate scrollbars */
+.elementContainer::-webkit-scrollbar {
+  display: none;
+}
+
+/* Style for Seminartitel */
+.Navtree h4 {
+    margin: 2px;
+  color:  white;
+  filter: brightness(1.4);
+  font-size: 19px;
+  margin-bottom: 10px;
 }
