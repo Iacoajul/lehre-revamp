@@ -67,15 +67,15 @@ const VSData = [
               }
             ],
             learningGoals: [
-              "Hardware und Betriebssysteme: Wie funktioniert ein Rechner?",
-              "Konsole: Geschichte, Befehle, Navigation",
-              "Datenschutz & IT-Sicherheit: DSGVO, Bedrohungen, Schwachstellen",
-              "Bildbearbeitung: Pixel, Auflösung, Farbräume",
-              "Internetkommunikation: Webserver, Protokolle, VPN",
-              "E-Mail: Mailserver, Verschlüsselung, Sicherheit",
-              "Identitätsmanagement: LDAP, Authentifizierung"
+            "Hardware und Betriebssysteme: Wie funktioniert ein Rechner?",
+            "Konsole: Geschichte, Befehle, Navigation",
+            "Datenschutz & IT-Sicherheit: DSGVO, Bedrohungen, Schwachstellen",
+            "Bildbearbeitung: Pixel, Auflösung, Farbräume",
+            "Internetkommunikation: Webserver, Protokolle, VPN",
+            "E-Mail: Mailserver, Verschlüsselung, Sicherheit",
+            "Identitätsmanagement: LDAP, Authentifizierung"
             ]
-          }, 
+        },
     },
     {
         title: "Media Transformation – Interaktives Erzählen in VR",
@@ -1262,7 +1262,7 @@ const VSData = [
                 ]
             }
         },
-                                             
+    
 ];
 
 export default VSData;

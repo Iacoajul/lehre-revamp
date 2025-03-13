@@ -1,35 +1,35 @@
 import React from 'react';
-import { Link, useParams } from 'react-router-dom';
+import { Link} from 'react-router-dom';
 import styles from './Navelement.module.css';
 
-const Navelement = ({ id, title, subPages }) => {
-  const { id: currentId } = useParams();
-  const subData = subPages || [];
+/*
+  * Navelement is a recursive component that renders a single navigation element.
+  * If the element has subPages, it renders them as well.
+  * Navelemt is the smallest unit of the navigation tree and handles the individual links
+*/
 
-  console.log(`Rendering Navelement: ${title}, subPages:`, subData);
+const Navelement = ({ id, title, subPages }) => {
+ 
+  const subData = subPages || [];  //saving subpages locally to avoid errors
 
   return (
-    <div className={styles.navContainer}>
-      <div className={styles.navRow}>
-        <div className={styles.navCell}>
+        <div className={styles.navCell}> {/*Container for the navigation elements; including individual subpages*/}
           <Link to={`/veranstaltung/${id}`} className={styles.navLink}>
             {title}
-          </Link>
-          {subData.length > 0 && (
-            <span className={styles.expandIcon}>
+          </Link> {/*Link to the individual pages*/}
+          {subData.length > 0 && ( //if there are subpages, render them
+            <><span className={styles.expandIcon}> {/*Icon to indicate that there are subpages*/}
               ▶
             </span>
-          )}
-      {subData.length > 0 && (
-        <div className={styles.subPages}>
-          {subData.map((subPage, index) => (
-            <Navelement key={index} {...subPage} />
+        <div className={styles.subPages}> {/*Container for the subpages*/}
+          {subData.map((subPage, index) => ( //mapping over the subpages to render them
+            <Navelement key={index} {...subPage} /> //recursive call to render the subpages
           ))}
-          </div>
+          </div></> //closing the conditional rendering
       )}
       </div>
-      </div>
-    </div>
+ 
+
   );
 };
 

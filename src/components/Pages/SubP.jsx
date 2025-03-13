@@ -3,22 +3,24 @@ import Sidebar from '../Navigation/Sidebar'
 import Header from '../Header'
 import Content from '../Content'
 
+/*
+  * SubP is the subpage of the application.
+  * The Component is mainly used for routing
+*/
+
 const SubP = () => {
+
+  //Some inline styling for the layout and flexing to know bad css practice ;)
   const containerStyle = {
     display: 'flex',
     flexDirection: 'row',
     width: '100%',
     justifyContent: 'right',
   };
-
   const contentStyle = {
     flex: '1',
-  
-    // maxWidth: '80%',
   };
-
   const sidebarStyle = {
-    
     width: '20%',
     minWidth: '15%',
   };

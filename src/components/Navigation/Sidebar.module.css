@@ -1,3 +1,4 @@
+/* Styles for the Sidebar */
 .sidebar {
   position: fixed;
   top: 0;
@@ -14,10 +15,12 @@
   background: var(--IDH_gradient);
 }
 
+/* Styles for States  */
 .sidebar.open {
   transform: translateX(0);
 }
 
+/*Have a fancy button */
 .toggleButton {
   position: fixed;
   top: 10px;
@@ -32,10 +35,12 @@
   border-radius: 5px;
 }
 
+/* Move the fancy button when the sidebar is open */
 .sidebar.open + .toggleButton {
   left: 260px; /* Sidebar width + 10px margin */
 }
 
+/* Hide the fancy button on large screens */
 @media (min-width: 1200px) {
   .sidebar {
     transform: translateX(0);

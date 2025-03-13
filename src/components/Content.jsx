@@ -12,11 +12,11 @@ const Content = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   if (!course) {
-    return <div className='empty-content'>
+    return <div className='empty-content'> {/*Catch 404 and offer a way back to Main*/}
 
       <h1>Kein Kurs gefunden</h1>
       <span>
-      <Link to="/"><button>Zurück zur startseite</button></Link>
+      <Link to="/"><button>Zurück zur Startseite</button></Link>
       </span>
     
 
