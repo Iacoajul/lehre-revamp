@@ -5,7 +5,7 @@
     padding: 5px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     color: white;
     font-size: 20px;
     font-weight: bold;
@@ -14,5 +14,18 @@
 p {
     font-size: 15px;
     text-align: left;
-
 }
+
+.idh-logo {
+    width: 100%;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.header-icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    margin-right: 30px;
+}
+
