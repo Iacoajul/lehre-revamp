@@ -1,10 +1,15 @@
 .footer-div {
-    background: white;
-    height: 80px;
+    background: none;
+    /* height: 80px; */
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     color: black;
     font-weight: bold;
+    position: relative;
+    bottom: 0px;
+    margin-top: 100px;
+    z-index: -1;
+    pointer-events: auto;
 }

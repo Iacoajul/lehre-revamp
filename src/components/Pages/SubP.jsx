@@ -17,9 +17,16 @@ const SubP = () => {
     flexDirection: 'row',
     width: '100%',
     justifyContent: 'right',
+    PointerEvents: 'all',
+    zIndex: '0',
+    opacity: '0.999999', //This is a lil hack to make the return to home button clickable on 404 handlers
   };
   const contentStyle = {
+    position: 'relative',
     flex: '1',
+    top: '118px',
+    minHeight: '80vh',
+    zIndex: '-1',
   };
   const sidebarStyle = {
     width: '20%',
@@ -28,8 +35,8 @@ const SubP = () => {
 
   return (
     <>
-      <Header />
       <div style={containerStyle}>
+      <Header />
         <div style={sidebarStyle}>
           <Sidebar />
         </div>

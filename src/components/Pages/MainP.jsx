@@ -9,10 +9,18 @@ import Footer from '../Footer'
   * The Component is only used for routing
 */
 const MainP = () => {
+
+const stylebox = {
+      position: 'relative',
+      top: '118px',
+}
+
   return (
     <>
         <Header />
+        <div style={stylebox}>
         <MainPage />
+        </div>
         <Footer />
     </>
   )

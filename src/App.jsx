@@ -5,7 +5,7 @@ import SubP from './components/Pages/SubP';
 
 const router = createBrowserRouter([ //Creating the router
   {//Main page
-    path: '/', 
+    path: '/',
     element: <MainP />,
     errorElement: <MainP />
   },

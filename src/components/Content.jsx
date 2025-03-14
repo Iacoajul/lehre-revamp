@@ -14,7 +14,7 @@ const Content = () => {
   if (!course) {
     return <div className='empty-content'> {/*Catch 404 and offer a way back to Main*/}
 
-      <h1>Kein Kurs gefunden</h1>
+      <h1>Kein Inhalt gefunden</h1>
       <span>
       <Link to="/"><button>Zurück zur Startseite</button></Link>
       </span>
