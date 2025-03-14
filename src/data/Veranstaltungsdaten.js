@@ -677,7 +677,7 @@ const VSData = [
         },
         {
             title: "Modellierung und digitale Karten",
-            id: "009",
+            id: "012",
             type: "Hauptseminar",
             semester: "Wintersemester 2024 / 2025",
             teachers: [
@@ -743,7 +743,7 @@ const VSData = [
           },
         {
             title: "Softwaretechnologie: Java I",
-            id: "003",
+            id: "013",
             type: "Seminar",
             semester: "Wintersemester 2024 / 2025",
             teachers: [
@@ -800,7 +800,7 @@ const VSData = [
         },
         {
             title: "Colloquium in Digital Cultural Heritage",
-            id: "004",
+            id: "014",
             type: "Kolloquium",
             semester: "Wintersemester 2024 / 2025",
             teachers: [
@@ -848,7 +848,7 @@ const VSData = [
         },
         {
             title: "Softwaretechnologie: Java I",
-            id: "005",
+            id: "015",
             type: "Seminar",
             semester: "Wintersemester 2024 / 2025",
             teachers: [
@@ -905,7 +905,7 @@ const VSData = [
         },
         {
             title: "IT-Zertifikat der Phil. Fak.: Tools & Methods in DH",
-            id: "006",
+            id: "016",
             type: "Seminar",
             semester: "Wintersemester 2024 / 2025",
             teachers: [
@@ -954,7 +954,7 @@ const VSData = [
         },
         {
             title: "Einführung in die Informationsverarbeitung",
-            id: "007",
+            id: "017",
             type: "Vorlesung",
             semester: "Wintersemester 2024 / 2025",
             teachers: [
@@ -996,7 +996,7 @@ const VSData = [
         },
         {
             title: "Digital Objects",
-            id: "008",
+            id: "018",
             type: "Seminar",
             semester: "Wintersemester 2024 / 2025",
             teachers: [
@@ -1055,7 +1055,7 @@ const VSData = [
         },
         {
             title: "Sprachliche Informationsverarbeitung",
-            id: "009",
+            id: "019",
             type: "Vorlesung",
             semester: "Wintersemester 2024 / 2025",
             teachers: [
@@ -1115,7 +1115,7 @@ const VSData = [
         },
         {
             title: "Deep Learning",
-            id: "010",
+            id: "020",
             type: "Kolloquium",
             semester: "Wintersemester 2024 / 2025",
             teachers: [
@@ -1169,7 +1169,7 @@ const VSData = [
         },
         {
             title: "Public Humanities Tools",
-            id: "011",
+            id: "021",
             type: "Übung",
             semester: "Wintersemester 2024 / 2025",
             teachers: [
@@ -1215,7 +1215,7 @@ const VSData = [
         },
         {
             title: "Anwendungen der Computerlinguistik",
-            id: "012",
+            id: "022",
             type: "Hauptseminar",
             semester: "Wintersemester 2024 / 2025",
             teachers: [
@@ -1264,7 +1264,7 @@ const VSData = [
         },
         {
             title: "IT-Zertifikat der Phil. Fak.: Advanced IT Basics",
-        id: "013",
+        id: "023",
         type: "Seminar",
         semester: "Sommersemester 2024",
         teachers: ["Laura Pascale Berg"],
@@ -1342,7 +1342,7 @@ const VSData = [
         },
         {
             title: "Einführung in die Statistik",
-            id: "014",
+            id: "024",
             type: "Übung",
             semester: "Sommersemester 2024",
             teachers: ["Dr. Jürgen Hermes"],
@@ -1377,7 +1377,7 @@ const VSData = [
         },
         {
             title: "Algorithmen und Logik II",
-            id: "015",
+            id: "025",
             type: "Übung",
             semester: "Sommersemester 2024",
             teachers: ["Susanne Kurz M.A."],
@@ -1421,7 +1421,7 @@ const VSData = [
         },
         {
             title: "Die Digitale Gesellschaft",
-            id: "016",
+            id: "026",
             type: "Hauptseminar",
             semester: "Wintersemester 2023 / 2024",
             teachers: ["Prof. Dr. Nils Reiter"],
@@ -1507,7 +1507,7 @@ const VSData = [
         }, 
         {
             title: "Basissysteme der Informationsverarbeitung 1 - BSI 1",
-            id: "017",
+            id: "027",
             type: "Seminar",
             semester: "Wintersemester 2023 / 2024",
             teachers: [
@@ -1607,7 +1607,7 @@ const VSData = [
         },
         {
             title: "Einführung in die Statistik",
-            id: "018",
+            id: "028",
             type: "Übung",
             semester: "Sommersemester 2023",
             teachers: ["Dr. Jürgen Hermes"],
@@ -1642,7 +1642,7 @@ const VSData = [
         },
         {
             title: "Anatomie der Schriftsprachen",
-            id: "019",
+            id: "029",
             type: "Übung",
             semester: "Wintersemester 2022 / 2023",
             teachers: ["Dr. Jürgen Hermes"],
@@ -1679,7 +1679,7 @@ const VSData = [
         },
         {
             title: "Embeddings",
-            id: "020",
+            id: "030",
             type: "Hauptseminar",
             semester: "Sommersemester 2022",
             teachers: ["Prof. Dr. Nils Reiter"],
@@ -1716,7 +1716,7 @@ const VSData = [
         }, 
         {
             title: "Public Humanities Tools",
-            id: "021",
+            id: "031",
             type: "Übung",
             semester: "Wintersemester 2021 / 2022",
             teachers: ["Dr. Jürgen Hermes"],
