@@ -1,7 +1,7 @@
 /* Styles for the Sidebar */
 .sidebar {
   position: fixed;
-  top: 117px;
+  top: 108px;
   left: 0px;
   width: 250px;
   height: 100%;
@@ -23,8 +23,8 @@
 /*Have a fancy button */
 .toggleButton {
   position: fixed;
-  top: 119px;
-  left: 1px;
+  top: 112px;
+  left: 2px;
   background: var(--IDH_gradient2);
   color: white;
   border: none;
