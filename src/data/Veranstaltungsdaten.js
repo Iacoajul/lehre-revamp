@@ -1262,7 +1262,499 @@ const VSData = [
                 ]
             }
         },
-    
+        {
+            title: "IT-Zertifikat der Phil. Fak.: Advanced IT Basics",
+        id: "013",
+        type: "Seminar",
+        semester: "Sommersemester 2024",
+        teachers: ["Laura Pascale Berg"],
+        degree: ["IT-Zertifikat der Philosophischen Fakultät"],
+        date: {
+            weekday: "Mo.",
+            time: "14:00 - 15:30",
+            place: "103 S89",
+        },
+        subPages: [
+            { title: "Infos zum Kurs, Teilnahmebedingungen", id: "013001", subPages: [] },
+            { title: "Computer-Hardware und BIOS / UEFI", id: "013002", subPages: [] },
+            { title: "Grundlagen Betriebssysteme", id: "013003", subPages: [] },
+            { title: "Betriebssystem Windows", id: "013004", subPages: [] },
+            { title: "Open Source", id: "013005",  subPages: [] },
+            { title: "Microsoft Office", id: "013006", subPages: [
+                { title: "Word", id: "013007", subPages: [] },
+                { title: "Excel", id: "013008", subPages: [] },
+                { title: "PowerPoint", id: "013009", subPages: [] }
+            ] },
+            { title: "Libreoffice / Grundlagen Datenbanken", id: "013010", subPages: [] },
+            { title: "Bildbearbeitung in Theorie und Praxis", id: "013011", subPages: [] },
+            { title: "Datenschutz und Informationssicherheit", id: "013012", subPages: [] },
+            { 
+                title: "Betriebssystem Linux", 
+                id: "013013", 
+                subPages: [
+                    { title: "Ubuntu-Linux ausprobieren", id: "013014", subPages: [] },
+                    { title: "Kommandozeile - Shell - Terminal", id: "013015", subPages: [] },
+                    { title: "Computer im Computer: Virtuelle Maschinen (VM)", id: "013016", subPages: [] }
+                ] 
+            },
+            { title: "Netzwerktechnik I", id: "013017", subPages: [] },
+            { title: "Netzwerktechnik II - Netzwerksicherheit", id: "013018", subPages: [] },
+            { 
+                title: "Mail", 
+                id: "013019", 
+                subPages: [
+                    { title: "Übung telnet – Mail über Kommandozeile versenden", id: "013020", subPages: [] }
+                ] 
+            }
+        ],
+        content: {
+            introduction: "Herzlich Willkommen! In dem Kurs Advanced IT-Basics geht es einmal quer durch die Grundlagen der Informationstechnik...",
+            topics: [
+              {
+                category: "Grundlagen",
+                details: [
+                  "Computer-Hardware und Informationstechnik",
+                  "Betriebssysteme (Windows, Linux), Konsole",
+                  "Datenschutz, Informationssicherheit und IT-Sicherheit",
+                  "Open Source in Theorie und Praxis (z.B. LibreOffice)"
+                ]
+              },
+              {
+                category: "Medien & Internet",
+                details: [
+                  "Grundlagen des digitalen Audios und Podcasting (Audacity)",
+                  "Grundlagen der Bildbearbeitung (GIMP)",
+                  "Internetkommunikation & Netzwerksicherheit: Client-Server-Modelle, Webserver (Apache), VPN",
+                  "Kommunikationsprotokolle und Identitätsmanagement: E-Mail (POP, IMAP, SMTP), LDAP"
+                ]
+              }
+            ],
+            learningGoals: [
+            "Hardware und Betriebssysteme: Wie funktioniert ein Rechner?",
+            "Konsole: Geschichte, Befehle, Navigation",
+            "Datenschutz & IT-Sicherheit: DSGVO, Bedrohungen, Schwachstellen",
+            "Bildbearbeitung: Pixel, Auflösung, Farbräume",
+            "Internetkommunikation: Webserver, Protokolle, VPN",
+            "E-Mail: Mailserver, Verschlüsselung, Sicherheit",
+            "Identitätsmanagement: LDAP, Authentifizierung"
+            ]
+        },
+        },
+        {
+            title: "Einführung in die Statistik",
+            id: "014",
+            type: "Übung",
+            semester: "Sommersemester 2024",
+            teachers: ["Dr. Jürgen Hermes"],
+            degree: ["Bachelor Informationsverarbeitung"],
+            date: {
+                weekday: "Mi.",
+                time: "14:00 - 15:30",
+                place: "S89 / Computerpool S60",
+            },
+            subPages: [],
+            content: {
+                introduction: "Der Kurs vermittelt die Grundlagen der Statistik und gibt eine grundlegende Einführung in die Programmiersprache R.",
+                topics: [
+                    {
+                        category: "Block bis nach Pfingsten",
+                        details: [
+                            "Einführung in die Programmiersprache R"
+                        ]
+                    },
+                    {
+                        category: "Block nach Pfingsten",
+                        details: [
+                            "Einführung in die wichtigsten Begriffe und Konzepte der statistischen Auswertung",
+                        ]
+                    }
+                ],
+                learningGoals: [
+                    "Verstehen der Grundlagen der Programmiersprache R",
+                    "Erlernen der statistischen Auswertung"
+                ]
+            }
+        },
+        {
+            title: "Algorithmen und Logik II",
+            id: "015",
+            type: "Übung",
+            semester: "Sommersemester 2024",
+            teachers: ["Susanne Kurz M.A."],
+            degree: ["Master Recht der Digitalisierung"],
+            date: {
+                weekday: "Do.",
+                time: "16:00 - 17:30",
+                place: "103 Seminarraum S93",
+            },
+            subPages: [],
+            content: {
+                introduction: "Datenaufbereitung und Codieren mit HTML und CSS: Sie werden lernen, wie Sie Daten für die Verwendung in Webanwendungen aufbereiten und formatieren können.",
+                topics: [
+                    {
+                        category: "Codieren",
+                        details: [
+                            "HTML (Hypertext Markup Language) für die Strukturierung von Webinhalten",
+                            "CSS (Cascading Style Sheets) für das Styling und Layout"
+                        ]
+                    },
+                    {
+                        category: "Datenmodellierung",
+                        details: [
+                            "Konzepte unterschiedlicher Datenmodellierung",
+                            "Praktisches Arbeiten mit den Datenformaten JSON (JavaScript Object Notation) und XML (Extensible Markup Language)"
+                        ]
+                    },
+                    {
+                        category: "Erstes Programmieren mit JavaScript",
+                        details: [
+                            "Einführung in die Programmierung mit JavaScript",
+                            "Grundlegende Programmierkonzepte"
+                        ]
+                    }
+                ],
+                learningGoals: [
+                    "Verständnis von Datenaufbereitung und Codieren",
+                    "Erste Programme schreiben können"
+                ]
+            },
+        },
+        {
+            title: "Die Digitale Gesellschaft",
+            id: "016",
+            type: "Hauptseminar",
+            semester: "Wintersemester 2023 / 2024",
+            teachers: ["Prof. Dr. Nils Reiter"],
+            degree: ["Master Informationsverarbeitung | Master Medieninformatik | Master Informatik"],
+            date: {
+                weekday: "Di.",
+                time: "12:00 - 13:30",
+                place: "103 Seminarraum S91"
+            },
+            content: {
+                introduction: "Dieses Hauptseminar setzt sich mit den technischen Aspekten aktueller, gesellschaftlicher und politischer Debatten ausseinander. Ziel ist es einerseits, einen Überblick über den Einfluss von Technik auf politische und gesellschaftliche Entscheidungen zu gewinnen, und andererseits zu verstehen, welche technischen Grundlagen in den Bereichen jeweils zu kennen sind.",
+                topics: [
+                    {
+                        category: "Wahlcomputer",
+                        details: [
+                            "Politische Wahlen online/digital - technischer Sachstand"
+                        ]
+                    },
+                    {
+                        category: "Vorstellung",
+                        details: [
+                            "Unterschiedliche Public Humanities Projekte"
+                        ]
+                    },
+                    {
+                        category: "Elektronische Patientenakte (ePA)",
+                        details: [
+                            "Planung und Umsetzung",
+                            "Technischen und organisatorischen Anforderungen"
+                        ]
+                    },
+                    {
+                        category: "Datenschutz-Grundverordnung (DSGVO)",
+                        details: [
+                            "Die Bedeutung von Cookiebannern",
+                            "Einschätzung der technischen Regelungen"
+                        ]
+                    },
+                    {
+                        category: "Digitale Gewalt gegen Frauen",
+                        details: [
+                            "Digitale Bedrohungen und Schutz",
+                            "Stand der Technik und Rechtslage"
+                        ]
+                    },
+                    {
+                        category: "Digitales Erbe",
+                        details: [
+                            "Erbe von Dateien und Passwörtern",
+                            "Rechtliche Regelungen und technische Probleme"
+                        ]
+                    },
+                    {
+                        category: "Online-Durchsuchung",
+                        details: [
+                            "Stand der Diskussion, Stand der Technik"
+                        ]
+                    },
+                    {
+                        category: "Chatkontrolle",
+                        details: [
+                            "Vorschlag auf EU-Ebene, Probleme und Alternativen"
+                        ]
+                    },
+                    {
+                        category: "Künstliche Intelligenz und das Urheberrecht",
+                        details: [
+                            "Urheberrechtsverletzung und Folgen für KI"
+                        ]
+                    },
+                    {
+                        category: "Phänomen Hate Speech",
+                        details: [
+                            "Automatische Erkennung",
+                            "Rechtliche und praktische Seite"
+                        ]
+                    }
+                ],
+                learningGoals: [
+                    "Überblick über den Einfluss von Technik auf politische und gesellschaftliche Entscheidungen gewinnen",
+                    "Technische Grundlagen in den jeweiligen Bereichen kennen"]
+            }
+        }, 
+        {
+            title: "Basissysteme der Informationsverarbeitung 1 - BSI 1",
+            id: "017",
+            type: "Seminar",
+            semester: "Wintersemester 2023 / 2024",
+            teachers: [
+                "Susanne Kurz M.A."
+            ],
+            date: {
+                weekday: "Mi.",
+                time: "10:00 - 11:30",
+                place: "SSC S34"
+            },
+            content: {
+                introduction: "In diesem Seminar werden wir mit JavaScript arbeiten, nach einer kurzen Einführung in die Sprache werden wir uns mit den Besonderheiten von JavaScript beschäftigen und dann das Userinterface mit der Bibliothek React programmieren.",
+                topics: [
+                {
+                    category: "Einführung in die Programmierung mit JavaScript",
+                    details: [
+                    "Grundlegende Syntax und Struktur von JavaScript-Programmen",
+                    "Unterschiede zu anderen Programmiersprachen"
+                    ]
+                },
+                {
+                    category: "Variablen, Datentypen und Operatoren",
+                    details: [
+                    "Variablendeklaration mit var, let und const",
+                    "Datentypen und Typkonvertierung in JavaScript"
+                    ]
+                },
+                {
+                    category: "Kontrollstrukturen und Funktionen",
+                    details: [
+                    "Bedingungen (if, switch) und Schleifen (for, while, do-while)",
+                    "Arrow Functions und anonyme Funktionen"
+                    ]
+                },
+                {
+                    category: "Objektorientierte Programmierung (OOP) in JavaScript",
+                    details: [
+                    "Prototypenbasierte Vererbung",
+                    "ES6-Klassen und Konstruktoren"
+                    ]
+                },
+                {
+                    category: "Vererbung und Polymorphismus",
+                    details: [
+                    "Klassenhierarchien in JavaScript",
+                    "Methodenüberschreibung und Polymorphismus"
+                    ]
+                },
+                {
+                    category: "Fehlermanagement und Debugging",
+                    details: [
+                    "Try-Catch-Handling in JavaScript",
+                    "Debugging mit den Developer Tools"
+                    ]
+                },
+                {
+                    category: "Arbeiten mit der JavaScript Standard-Klassenbibliothek",
+                    details: [
+                    "Wichtige Objekte: Math, Date, JSON",
+                    "Umgang mit asynchronem Code (Promises, Async/Await)"
+                    ]
+                },
+                {
+                    category: "Einführung in Datenstrukturen und Algorithmen",
+                    details: [
+                    "Arrays und Objekte",
+                    "Einführung in Maps und Sets"
+                    ]
+                },
+                {
+                    category: "Grundlagen der funktionalen Programmierung",
+                    details: [
+                    "Higher-Order Functions",
+                    "Array-Methoden wie map(), filter(), reduce()"
+                    ]
+                },
+                {
+                    category: "Testen und Debugging von JavaScript-Programmen",
+                    details: [
+                    "Unit-Tests mit Jest",
+                    "Debugging-Techniken für JavaScript-Code"
+                    ]
+                }
+                ],
+                learningGoals: [
+                "Verständnis für die Grundlagen von JavaScript und seiner Besonderheiten",
+                "Fähigkeit, einfache JavaScript-Programme zu schreiben und zu strukturieren",
+                "Anwendung von Kontrollstrukturen zur Steuerung des Programmflusses",
+                "Entwicklung und Nutzung eigener Funktionen und Klassen",
+                "Verständnis für asynchrones Programmieren und Event-Handling",
+                "Sichere Nutzung von modernen JavaScript-Features (ES6+)",
+                "Grundkenntnisse in der funktionalen Programmierung mit JavaScript",
+                "Kenntnisse im Debugging und Testen von JavaScript-Code",
+                "Fähigkeit zur Entwicklung von User Interfaces mit React"
+                ]
+            },
+        },
+        {
+            title: "Einführung in die Statistik",
+            id: "018",
+            type: "Übung",
+            semester: "Sommersemester 2023",
+            teachers: ["Dr. Jürgen Hermes"],
+            degree: ["Bachelor Informationsverarbeitung"],
+            date: {
+                weekday: "Mi.",
+                time: "14:00 - 15:30",
+                place: "S57 / Computerpool S60",
+            },
+            subPages: [],
+            content: {
+                introduction: "Der Kurs vermittelt die Grundlagen der Statistik und gibt eine grundlegende Einführung in die Programmiersprache R.",
+                topics: [
+                    {
+                        category: "Block bis Pfingsten",
+                        details: [
+                            "Einführung in die Programmiersprache R"
+                        ]
+                    },
+                    {
+                        category: "Block nach Pfingsten",
+                        details: [
+                            "Einführung in die wichtigsten Begriffe und Konzepte der statistischen Auswertung",
+                        ]
+                    },
+                ],
+                learningGoals: [
+                    "Verstehen der Grundlagen der Programmiersprache R",
+                    "Erlernen der statistischen Auswertung"
+                ]
+            },
+        },
+        {
+            title: "Anatomie der Schriftsprachen",
+            id: "019",
+            type: "Übung",
+            semester: "Wintersemester 2022 / 2023",
+            teachers: ["Dr. Jürgen Hermes"],
+            degree: ["Master Informationsverarbeitung Master Medieninformatik | Master Linguistik - Computerlinguistik"],
+            date: {
+                weekday: "Mo.",
+                time: "12:00 - 13:30",
+                place: "S69",
+            },
+            subPages: [],
+            content: {
+                introduction: "Ziel des Kurses ist die Auslotung von Gemeinsamkeiten und Unterschieden verschiedener Schriftsprachen.",
+                topics: [
+                    {
+                        category: "Schriftsprachen",
+                        details: [
+                            "Zeichensysteme",
+                            "Schriftsysteme",
+                            "Exkurs Kryptologie"
+                        ]
+                    },
+                    {
+                        category: "R-Programmierprojekt",
+                        details: [
+                            "R und RStudio",
+                        ]
+                    },
+                ],
+                learningGoals: [
+                    "Erlangen eines besseren Verständnisses von Schriftsprachen",
+                    "R-Programmiercode innerhalb der Entwicklungsumgebung RStudio ausführen und auf ihre Anwendung anpassen können"
+                ]
+            },
+        },
+        {
+            title: "Embeddings",
+            id: "020",
+            type: "Hauptseminar",
+            semester: "Sommersemester 2022",
+            teachers: ["Prof. Dr. Nils Reiter"],
+            degree: ["Master Informationsverarbeitung | Master Linguistik - Computerlinguistik"],
+            date: {
+                weekday: "Do.",
+                time: "16:00 - 17:30",
+                place: "Seminarraum S85"
+            },
+            content: {
+                introduction: "Mit 'Embeddings' wird eine Sammlung von Methoden bezeichnet, um Objekte in hochdimensionalen Vektorräumen zu repräsentieren. Klassifiziert, z. B. nach Wortarten, werden dann nicht mehr (nur) die Oberflächenformen, sondern die Vektoren, die auch Informationen über den Kontext beinhalten.",
+                topics: [
+                    {
+                        category: "Einführung und Grundlagen",
+                        details: [
+                            "Methoden zum Erzeugen von Embeddings",
+                            "Anwendungen von Embeddings",
+                            "Forschungen, in denen Embeddings für andere Objekte als Wörter eingesetzt werden"
+                        ]
+                    },
+                    {
+                        category: "Praktische Aufgaben und Anwendungen",
+                        details: [
+                            "Typ-Token-Ratio Berechnung",
+                            "Linguistische und nicht-linguistische Annotation",
+                            "Handschriftliche Ziffernerkennung mit logistischer Regression",
+                            "Multiklassen-Klassifikation mit Word Embeddings"
+                        ]
+                    }
+                ],
+                learningGoals: [
+                    "Embeddings erzeugen und anwenden können"]
+            }
+        }, 
+        {
+            title: "Public Humanities Tools",
+            id: "021",
+            type: "Übung",
+            semester: "Wintersemester 2021 / 2022",
+            teachers: ["Dr. Jürgen Hermes"],
+            degree: ["Master Informationsverarbeitung | Master Medieninformatik | Master Linguistik - Computerlinguistik"],
+            date: {
+                weekday: "Mo.",
+                time: "12:00 - 13:30",
+                place: "Virtueller Raum"
+            },
+            content: {
+                introduction: "Wie der Titel schon sagt, liegt der Fokus der Übung auf Software-Tools, die für Public Humanities Projekte genutzt werden (oder genutzt werden könnten).",
+                topics: [
+                    {
+                        category: "Einführung",
+                        details: [
+                            "Was sind Public Humanities?"
+                        ]
+                    },
+                    {
+                        category: "Vorstellung",
+                        details: [
+                            "Unterschiedliche Public Humanities Projekte"
+                        ]
+                    },
+                    {
+                        category: "Projektvorschläge für die Umsetzung in Teams",
+                        details: [
+                            "Evaluation / Weiterentwicklung von in PH-Projekten eingesetzten Tools",
+                            "Content-Bereitstellung aus verschiedenen Social-Media-Plattformen",
+                            "Mapping von Dostojewskis Spuren in Deutschland (real und fiktiv)"
+                        ]
+                    }
+                ],
+                learningGoals: [
+                    "Verständnis von Public Humanities",
+                    "Public Humanities Projekte identifizieren können"]
+            }
+        }, 
 ];
 
 export default VSData;
